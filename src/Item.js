@@ -35,9 +35,7 @@ const Item = React.memo(({
       />
       {
         description && (
-          <span className="image-gallery-description">
-            {description}
-          </span>
+          <span className="image-gallery-description" dangerouslySetInnerHTML={{__html:description}}></span>
         )
       }
     </React.Fragment>
